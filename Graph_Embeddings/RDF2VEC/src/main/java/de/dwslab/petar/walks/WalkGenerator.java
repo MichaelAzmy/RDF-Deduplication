@@ -300,8 +300,8 @@ public class WalkGenerator {
 			dataset.begin(ReadWrite.READ);
 			QueryExecution qe = QueryExecutionFactory.create(query, model);
 			ResultSet resultsTmp = qe.execSelect();
-			String entityShort = entity.replace("http://www.freme-project.eu/datasets/cordis/",
-					"cordis:");
+			String entityShort = entity.replace("http://dblp.l3s.de/d2r/",
+					“dblp:”);
 			ResultSet results = ResultSetFactory.copyResults(resultsTmp);
 			qe.close();
 			dataset.end();
