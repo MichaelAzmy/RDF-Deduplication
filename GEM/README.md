@@ -1,3 +1,5 @@
+# Please check the jupyter notebook for running the script over this library
+
 # GEM: Graph Embedding Methods
 GEM is a Python module that implements many graph (a.k.a. network) embedding algorithms. GEM is distributed under BSD license.
 
