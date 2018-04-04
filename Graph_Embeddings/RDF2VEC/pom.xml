@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.dwslab.petar</groupId>
+	<artifactId>LOD2Walks</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>fully.qualified.MainClass</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+	<dependencies>
+		<!-- <dependency> <groupId>com.tinkerpop</groupId> <artifactId>gremlin-core</artifactId> 
+			<version>3.0.0.M1</version> </dependency> <dependency> <groupId>com.tinkerpop</groupId> 
+			<artifactId>gremlin-driver</artifactId> <version>3.0.0.M1</version> </dependency> 
+			<dependency> <groupId>com.tinkerpop</groupId> <artifactId>gremlin-test</artifactId> 
+			<version>3.0.0.M1</version> </dependency> <dependency> <groupId>com.tinkerpop</groupId> 
+			<artifactId>neo4j-gremlin</artifactId> <version>3.0.0.M1</version> </dependency> 
+			<dependency> <groupId>com.tinkerpop.gremlin</groupId> <artifactId>gremlin-java</artifactId> 
+			<version>2.6.0</version> </dependency> <dependency> <groupId>com.tinkerpop.blueprints</groupId> 
+			<artifactId>blueprints-neo4j-graph</artifactId> <version>2.6.0</version> 
+			</dependency> -->
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>3.0.0-M04</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>apache-jena-libs</artifactId>
+			<type>pom</type>
+			<version>2.13.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
+			<version>3.6</version>
+		</dependency>
+	</dependencies>
+</project>
